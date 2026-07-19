@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GymKhata — Kill silent churn</title>
+  <meta name="description" content="GymKhata tracks membership expiry, runs a renewal + win-back reminder ladder, and turns trials into members. Built for Indian gym and fitness-studio owners. Rs 799/mo." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="GymKhata home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 9v6M20 9v6M8 7v10M16 7v10M4 12h4M16 12h4M8 12h8"/>
+          </svg>
+        </span>
+        <span class="brand__name">Gym<span class="brand__khata">Khata</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#problem">Problem</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a href="#pricing" class="btn btn--sm nav__cta">Start free</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span> Renewal &amp; win-back engine for gyms</p>
+          <h1 class="hero__title">Kill<br><span class="accent">silent churn.</span></h1>
+          <p class="hero__lede">
+            Your members don't quit with a phone call. They just stop coming — and the
+            month their plan ends, nobody reminds them. GymKhata catches every expiry
+            and pulls them back before the money walks out the door.
+          </p>
+          <div class="hero__actions">
+            <a href="#pricing" class="btn btn--lg">Start free — then Rs 799/mo</a>
+            <a href="#how" class="link-arrow">See how it works &rarr;</a>
+          </div>
+          <p class="hero__trust">No app for your members to install. Runs on the phone at your reception desk.</p>
+        </div>
+
+        <!-- Signature: the churn meter -->
+        <figure class="churn" aria-label="Illustration of members lapsing and being won back">
+          <figcaption class="churn__cap">
+            <span>This month's roster</span>
+            <span class="churn__legend">
+              <i class="chip chip--live"></i> active
+              <i class="chip chip--fade"></i> lapsing
+              <i class="chip chip--won"></i> won back
+            </span>
+          </figcaption>
+          <div class="churn__grid" id="churnGrid" aria-hidden="true"></div>
+          <div class="churn__foot">
+            <div class="churn__stat">
+              <span class="churn__num" data-count="14" data-suffix="">0</span>
+              <span class="churn__lbl">plans expire this week</span>
+            </div>
+            <div class="churn__stat">
+              <span class="churn__num" data-count="9" data-suffix="">0</span>
+              <span class="churn__lbl">win-backs recovered</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 2. PROBLEM ============ -->
+    <section class="section" id="problem">
+      <div class="wrap">
+        <p class="section__eyebrow">The leak</p>
+        <h2 class="section__title">A gym doesn't lose members. It <em>forgets</em> them.</h2>
+        <div class="problem__grid">
+          <div class="problem__lede">
+            <p>
+              Priya's plan ended on the 3rd. She meant to renew. Nobody messaged her.
+              By the 20th she'd joined the studio down the road. You never even knew she'd left —
+              until the month's collection came up short.
+            </p>
+            <p class="problem__stress">
+              That's <strong>silent churn</strong>: not a complaint, not a cancellation, just a
+              quiet gap in the roster that nobody was watching.
+            </p>
+          </div>
+          <ul class="problem__list">
+            <li>
+              <span class="problem__tag">The diary</span>
+              Expiry dates live in a register at the desk. Nobody reads yesterday's page, so nobody knows who lapsed.
+            </li>
+            <li>
+              <span class="problem__tag">WhatsApp by memory</span>
+              You remind the members you happen to remember. The quiet ones — the ones already drifting — get nothing.
+            </li>
+            <li>
+              <span class="problem__tag">Trials that vanish</span>
+              A trial walks in, sweats it out, walks off. No follow-up, no conversion, no record it ever happened.
+            </li>
+            <li>
+              <span class="problem__tag">Freezes gone wrong</span>
+              A member pauses for a wedding trip. You forget to extend the end date. Now it's an argument at the desk.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. INSIGHT ============ -->
+    <section class="insight" id="insight">
+      <div class="wrap insight__inner">
+        <p class="insight__eyebrow">The wedge</p>
+        <p class="insight__quote">
+          Gyms don't die from bad workouts. They die from
+          <span class="accent">members lapsing without a single reminder.</span>
+          Fix the reminder, and you keep the member.
+        </p>
+        <p class="insight__by">So GymKhata does exactly one job well: the renewal, win-back, and trial-conversion engine — nothing else.</p>
+      </div>
+    </section>
+
+    <!-- ============ 4. HOW IT WORKS ============ -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <p class="section__eyebrow">How it works</p>
+        <h2 class="section__title">Four steps. Then it runs itself.</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__no">1</span>
+            <h3 class="step__h">Add your members</h3>
+            <p>Name, phone, plan, and the date it ends. Import your diary in an afternoon — no member app to roll out.</p>
+          </li>
+          <li class="step">
+            <span class="step__no">2</span>
+            <h3 class="step__h">GymKhata watches every date</h3>
+            <p>It tracks who's expiring in 7 days, who's already expired, and who's been gone for 30 — automatically, every day.</p>
+          </li>
+          <li class="step">
+            <span class="step__no">3</span>
+            <h3 class="step__h">The ladder fills your outbox</h3>
+            <p>Ready-to-send renewal, expiry, and win-back messages line up in one outbox. You glance, tap, send.</p>
+          </li>
+          <li class="step">
+            <span class="step__no">4</span>
+            <h3 class="step__h">Watch the roster fill back up</h3>
+            <p>Renewals log themselves. Trials convert to members. Your MRR in rupees climbs on the dashboard.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 5. FEATURES ============ -->
+    <section class="section section--tint" id="features">
+      <div class="wrap">
+        <p class="section__eyebrow">Inside the engine</p>
+        <h2 class="section__title">Six things it does, so you don't have to remember.</h2>
+        <div class="features">
+          <article class="feat">
+            <div class="feat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18M9 14l2 2 4-4"/></svg>
+            </div>
+            <h3>Expiry tracking</h3>
+            <p>Every plan's end date, watched daily. You always know who's about to lapse before they do.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V8l8-4 8 4v12"/><path d="M4 12h16M4 16h16M12 8v12"/></svg>
+            </div>
+            <h3>The reminder ladder</h3>
+            <p>Three rungs — expiring in 7 days, just expired, lapsed 30-day win-back — all queued to your outbox.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3l5 5-11 11H5v-5z"/><path d="M13 6l5 5"/></svg>
+            </div>
+            <h3>Trial-to-member</h3>
+            <p>Log every trial, get nudged to follow up, and mark the conversion. No walk-in ever goes uncounted.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6M9 15h6M12 4v16"/></svg>
+            </div>
+            <h3>Freeze that's fair</h3>
+            <p>Pause a plan for a trip and the end date shifts by exactly those days. No arguments, no goodwill lost.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M6 6l6-4 6 4M6 6v10l6 4 6-4V6"/></svg>
+            </div>
+            <h3>PT session balance</h3>
+            <p>Track how many personal-training sessions each member has left, so nobody over- or under-claims.</p>
+          </article>
+          <article class="feat">
+            <div class="feat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 5-7"/></svg>
+            </div>
+            <h3>One-glance dashboard</h3>
+            <p>Active, expiring, and lapsed counts, MRR in rupees, and trials pending — the whole gym in one screen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. PRODUCT PREVIEW ============ -->
+    <section class="section" id="preview">
+      <div class="wrap">
+        <p class="section__eyebrow">The screen you'll live in</p>
+        <h2 class="section__title">Your whole gym, one honest dashboard.</h2>
+        <p class="section__sub">Real counts, real rupees. This is roughly what a 210-member studio looks like on a Tuesday morning.</p>
+
+        <div class="shot" role="img" aria-label="GymKhata dashboard showing member counts, monthly recurring revenue, the reminder outbox, and trials pending conversion">
+          <div class="shot__chrome">
+            <span class="shot__dots"><i></i><i></i><i></i></span>
+            <span class="shot__url">app.gymkhata.in&nbsp;/&nbsp;Iron Yard Fitness, Koramangala</span>
+          </div>
+          <div class="shot__body">
+            <div class="shot__top">
+              <div>
+                <p class="shot__hello">Good morning, Ramesh</p>
+                <p class="shot__date">Tuesday, 15 July 2026</p>
+              </div>
+              <span class="shot__badge">14 need attention today</span>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <span class="stat__k">Active members</span>
+                <span class="stat__v">186</span>
+                <span class="stat__d stat__d--up">+7 this week</span>
+              </div>
+              <div class="stat stat--warn">
+                <span class="stat__k">Expiring in 7 days</span>
+                <span class="stat__v">14</span>
+                <span class="stat__d">worth Rs 1,68,000</span>
+              </div>
+              <div class="stat stat--bad">
+                <span class="stat__k">Lapsed (win-back)</span>
+                <span class="stat__v">23</span>
+                <span class="stat__d">30-day ladder running</span>
+              </div>
+              <div class="stat stat--mrr">
+                <span class="stat__k">Monthly revenue (MRR)</span>
+                <span class="stat__v">Rs 3,42,400</span>
+                <span class="stat__d stat__d--up">+Rs 21,600 vs June</span>
+              </div>
+            </div>
+
+            <div class="shot__cols">
+              <div class="panel">
+                <div class="panel__head">
+                  <h4>Reminder outbox</h4>
+                  <span class="panel__count">11 ready</span>
+                </div>
+                <ul class="outbox">
+                  <li class="msg">
+                    <span class="msg__meta"><b>Priya Nair</b> · Koramangala · <span class="rung rung--7">expires in 5 days</span></span>
+                    <span class="msg__text">"Hi Priya! Your quarterly plan at Iron Yard ends on 20 Jul. Renew now &amp; keep your 6 AM slot. Reply YES."</span>
+                    <span class="msg__act">Send</span>
+                  </li>
+                  <li class="msg">
+                    <span class="msg__meta"><b>Arjun Reddy</b> · HSR Layout · <span class="rung rung--exp">expired 4 days ago</span></span>
+                    <span class="msg__text">"Arjun, we miss you at the rack! Your plan lapsed on 11 Jul. Renew this week &amp; the joining fee is waived."</span>
+                    <span class="msg__act">Send</span>
+                  </li>
+                  <li class="msg">
+                    <span class="msg__meta"><b>Sneha Iyer</b> · Indiranagar · <span class="rung rung--win">lapsed 30 days</span></span>
+                    <span class="msg__text">"Sneha, it's been a month! Come back this week &amp; get 15 days free on any 3-month plan. We saved your locker."</span>
+                    <span class="msg__act">Send</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="panel">
+                <div class="panel__head">
+                  <h4>Trials pending conversion</h4>
+                  <span class="panel__count">5 open</span>
+                </div>
+                <ul class="trials">
+                  <li><span class="trials__n">Vikram Shetty</span><span class="trials__d">Day 2 of 3 · BTM Layout</span><span class="trials__b trials__b--hot">Follow up</span></li>
+                  <li><span class="trials__n">Fatima Sheikh</span><span class="trials__d">Trial ended yesterday</span><span class="trials__b trials__b--hot">Call now</span></li>
+                  <li><span class="trials__n">Rohit Deshmukh</span><span class="trials__d">Day 1 of 3 · Ejipura</span><span class="trials__b">On track</span></li>
+                </ul>
+                <div class="convert">
+                  <span class="convert__k">Converted this month</span>
+                  <span class="convert__v">8 trials → Rs 96,000 added</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="shot__note">Illustrative dashboard. Numbers and names are samples.</p>
+      </div>
+    </section>
+
+    <!-- ============ 7. PRICING ============ -->
+    <section class="section section--tint" id="pricing">
+      <div class="wrap pricing__wrap">
+        <div class="pricing__pitch">
+          <p class="section__eyebrow">Pricing</p>
+          <h2 class="section__title">One member saved pays for the year.</h2>
+          <p class="pricing__roi">
+            A single quarterly plan is worth Rs 12,000+. GymKhata costs less than one lapsed member a year.
+            Catch two win-backs a month and it has paid for itself many times over — the rest is profit you
+            were quietly leaking.
+          </p>
+          <ul class="pricing__points">
+            <li>Unlimited members and trials</li>
+            <li>The full renewal &amp; win-back ladder</li>
+            <li>Freeze, PT balance, and the live dashboard</li>
+            <li>No member app to install — works at your desk</li>
+          </ul>
+        </div>
+        <div class="card">
+          <p class="card__tag">Everything, one plan</p>
+          <p class="card__price"><span class="card__cur">Rs</span>799<span class="card__per">/month</span></p>
+          <p class="card__sub">Per gym. No per-member fees. Cancel anytime.</p>
+          <a href="mailto:sreeni.nintendo@gmail.com?subject=GymKhata%20free%20trial" class="btn btn--lg btn--block">Start your free month</a>
+          <p class="card__fine">14 days free, then Rs 799/mo. No card to start.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. WHO IT'S FOR + FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="wrap forwho__grid">
+        <div class="forwho">
+          <p class="section__eyebrow">Who it's for</p>
+          <h2 class="section__title">Made for the owner at the desk.</h2>
+          <ul class="forwho__list">
+            <li><strong>Neighborhood gyms</strong> with 80–500 members and one register too many.</li>
+            <li><strong>Boutique fitness studios</strong> — yoga, CrossFit, Zumba, pilates — running on quarterly plans.</li>
+            <li><strong>Owner-operators</strong> who wear every hat and can't afford to chase renewals by memory.</li>
+          </ul>
+        </div>
+        <div class="faq">
+          <details class="qa" open>
+            <summary>Do my members need to install an app?</summary>
+            <p>No. GymKhata runs on your phone or the reception tablet. Members just get the reminders you send — over the channels they already use.</p>
+          </details>
+          <details class="qa">
+            <summary>How does the win-back ladder actually reach people?</summary>
+            <p>GymKhata writes the message for each member and drops it into one outbox — expiring, expired, and 30-day lapsed. You review and tap send. You stay in control of every message that goes out.</p>
+          </details>
+          <details class="qa">
+            <summary>What happens when a member freezes their plan?</summary>
+            <p>You enter the freeze dates and GymKhata pushes the end date out by exactly those days. The membership stays fair, and the record is right the next time they walk in.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 9. FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__name brand__name--lg">Gym<span class="brand__khata">Khata</span></span>
+        <p class="footer__tag">Kill silent churn. Keep the members you already earned.</p>
+      </div>
+      <div class="footer__meta">
+        <p class="footer__studio">A KARYA studio build</p>
+        <a class="footer__mail" href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a>
+        <p class="footer__legal">© 2026 GymKhata · Rs 799/mo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

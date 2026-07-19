@@ -1,0 +1,21 @@
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs & env
+*.log
+.env
+.env.local
+
+# Dependencies (none needed, but just in case)
+node_modules/
+
+# Build output
+dist/
+.cache/
