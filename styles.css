@@ -400,9 +400,9 @@ p{ margin:0; }
   background:radial-gradient(circle, rgba(220,38,38,.4), transparent 70%);
 }
 .card__tag{ font-size:.78rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#ff8f8f; margin-bottom:14px; }
-.card__price{ font-family:var(--mono); font-size:3.6rem; font-weight:700; letter-spacing:-.03em; line-height:1; }
+.card__price{ font-family:var(--mono); font-size:2rem; font-weight:700; letter-spacing:-.02em; line-height:1.1; }
 .card__cur{ font-size:1.5rem; vertical-align:top; margin-right:4px; color:#e9ded6; }
-.card__per{ font-size:1.05rem; color:#b7ada5; font-family:var(--sans); font-weight:500; margin-left:6px; }
+.card__per{ display:block; font-size:1.05rem; color:#b7ada5; font-family:var(--sans); font-weight:500; margin-top:8px; }
 .card__sub{ color:#c9beb6; margin:10px 0 22px; font-size:.95rem; }
 .card .btn{ position:relative; z-index:1; }
 .card__fine{ text-align:center; color:#9b918a; font-size:.82rem; margin-top:14px; }
