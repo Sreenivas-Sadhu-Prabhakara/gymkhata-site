@@ -1,18 +1,140 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GymKhata — Kill silent churn</title>
-  <meta name="description" content="GymKhata tracks membership expiry, runs a renewal + win-back reminder ladder, and turns trials into members. Built for Indian gym and fitness-studio owners. Subscription pricing shared on a discovery call." />
+
+  <title>GymKhata — Renewal &amp; win-back software for gyms</title>
+  <meta name="description" content="Gym membership software that tracks expiry, runs a renewal and win-back reminder ladder, and turns trials into members for Indian fitness studios. Book a call." />
+  <meta name="keywords" content="gym membership software, gym management app, membership renewal reminder, gym CRM, fitness studio billing India" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <link rel="canonical" href="https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/" />
+  <meta name="theme-color" content="#DC2626" />
+  <meta name="author" content="KARYA" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KARYA" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="GymKhata — Renewal &amp; win-back software for gyms" />
+  <meta property="og:description" content="Gym membership software that tracks every expiry, runs a renewal and win-back reminder ladder, and turns trials into members for Indian fitness studios." />
+  <meta property="og:url" content="https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/" />
+  <meta property="og:image" content="https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="GymKhata — kill silent churn. Renewal and win-back software for Indian gyms and fitness studios." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GymKhata — Renewal &amp; win-back software for gyms" />
+  <meta name="twitter:description" content="Gym membership software that tracks every expiry, runs a renewal and win-back reminder ladder, and turns trials into members for Indian fitness studios." />
+  <meta name="twitter:image" content="https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/og.png" />
+
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/og.png" />
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kaarya-bench.pages.dev/#org",
+        "name": "KARYA",
+        "url": "https://kaarya-bench.pages.dev/",
+        "email": "sreeni.nintendo@gmail.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/#website",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/",
+        "name": "GymKhata",
+        "inLanguage": "en-IN",
+        "publisher": { "@id": "https://kaarya-bench.pages.dev/#org" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "GymKhata",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/",
+        "image": "https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/og.png",
+        "description": "Gym membership software that tracks every expiry, runs a renewal and win-back reminder ladder, and turns trials into members for Indian gyms and fitness studios.",
+        "inLanguage": ["en-IN", "hi-IN"],
+        "areaServed": { "@type": "Country", "name": "India" },
+        "audience": { "@type": "BusinessAudience" },
+        "provider": { "@type": "Organization", "name": "KARYA" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "description": "Subscription — pricing shared on a discovery call"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do my members need to install an app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. GymKhata runs on your phone or the reception tablet. Members just get the reminders you send — over the channels they already use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the win-back ladder actually reach people?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GymKhata writes the message for each member and drops it into one outbox — expiring, expired, and 30-day lapsed. You review and tap send. You stay in control of every message that goes out."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when a member freezes their plan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You enter the freeze dates and GymKhata pushes the end date out by exactly those days. The membership stays fair, and the record is right the next time they walk in."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does GymKhata cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first users."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "KARYA On the Bench",
+            "item": "https://kaarya-bench.pages.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "GymKhata",
+            "item": "https://sreenivas-sadhu-prabhakara.github.io/gymkhata-site/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
   <!-- ============ NAV ============ -->
-  <header class="nav" id="nav">
+  <header class="nav" id="nav" aria-label="Site header">
     <div class="wrap nav__inner">
       <a class="brand" href="#top" aria-label="GymKhata home">
         <span class="brand__mark" aria-hidden="true">
@@ -37,11 +159,11 @@
     <span id="top"></span>
 
     <!-- ============ 1. HERO ============ -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero__grid">
         <div class="hero__copy">
           <p class="eyebrow"><span class="dot"></span> Renewal &amp; win-back engine for gyms</p>
-          <h1 class="hero__title">Kill<br><span class="accent">silent churn.</span></h1>
+          <h1 class="hero__title" id="hero-title">Kill<br><span class="accent">silent churn.</span></h1>
           <p class="hero__lede">
             Your members don't quit with a phone call. They just stop coming — and the
             month their plan ends, nobody reminds them. GymKhata catches every expiry
@@ -80,7 +202,7 @@
     </section>
 
     <!-- ============ 2. PROBLEM ============ -->
-    <section class="section" id="problem">
+    <section class="section" id="problem" aria-label="The problem: silent churn">
       <div class="wrap">
         <p class="section__eyebrow">The leak</p>
         <h2 class="section__title">A gym doesn't lose members. It <em>forgets</em> them.</h2>
@@ -119,7 +241,7 @@
     </section>
 
     <!-- ============ 3. INSIGHT ============ -->
-    <section class="insight" id="insight">
+    <section class="insight" id="insight" aria-label="The insight">
       <div class="wrap insight__inner">
         <p class="insight__eyebrow">The wedge</p>
         <p class="insight__quote">
@@ -132,7 +254,7 @@
     </section>
 
     <!-- ============ 4. HOW IT WORKS ============ -->
-    <section class="section" id="how">
+    <section class="section" id="how" aria-label="How GymKhata works">
       <div class="wrap">
         <p class="section__eyebrow">How it works</p>
         <h2 class="section__title">Four steps. Then it runs itself.</h2>
@@ -162,7 +284,7 @@
     </section>
 
     <!-- ============ 5. FEATURES ============ -->
-    <section class="section section--tint" id="features">
+    <section class="section section--tint" id="features" aria-label="Features">
       <div class="wrap">
         <p class="section__eyebrow">Inside the engine</p>
         <h2 class="section__title">Six things it does, so you don't have to remember.</h2>
@@ -214,7 +336,7 @@
     </section>
 
     <!-- ============ 6. PRODUCT PREVIEW ============ -->
-    <section class="section" id="preview">
+    <section class="section" id="preview" aria-label="Product preview">
       <div class="wrap">
         <p class="section__eyebrow">The screen you'll live in</p>
         <h2 class="section__title">Your whole gym, one honest dashboard.</h2>
@@ -305,7 +427,7 @@
     </section>
 
     <!-- ============ 7. PRICING ============ -->
-    <section class="section section--tint" id="pricing">
+    <section class="section section--tint" id="pricing" aria-label="Pricing">
       <div class="wrap pricing__wrap">
         <div class="pricing__pitch">
           <p class="section__eyebrow">Pricing</p>
@@ -333,7 +455,7 @@
     </section>
 
     <!-- ============ 8. WHO IT'S FOR + FAQ ============ -->
-    <section class="section" id="faq">
+    <section class="section" id="faq" aria-label="Who it's for and frequently asked questions">
       <div class="wrap forwho__grid">
         <div class="forwho">
           <p class="section__eyebrow">Who it's for</p>
@@ -367,7 +489,7 @@
   </main>
 
   <!-- ============ 9. FOOTER ============ -->
-  <footer class="footer">
+  <footer class="footer" aria-label="Site footer">
     <div class="wrap footer__inner">
       <div class="footer__brand">
         <span class="brand__name brand__name--lg">Gym<span class="brand__khata">Khata</span></span>

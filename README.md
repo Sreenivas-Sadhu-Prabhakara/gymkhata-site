@@ -6,7 +6,7 @@ win-back engine for Indian gym and fitness-studio owners.
 > **Kill silent churn.** Gyms don't lose members — they forget them. GymKhata
 > tracks every membership expiry, runs a three-rung reminder ladder
 > (expiring in 7 days → expired → 30-day win-back) into one outbox, and turns
-> trials into paying members. **Rs 799/mo.**
+> trials into paying members. **Pricing on discovery — billed as a simple monthly subscription.**
 
 This repo is **only the explainer website**. It is deliberately separate from
 the product's application source.
